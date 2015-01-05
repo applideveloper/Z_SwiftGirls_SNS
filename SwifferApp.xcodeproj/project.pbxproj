@@ -22,6 +22,9 @@
 		86F71A75196086A3008EE3B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A74196086A3008EE3B7 /* SystemConfiguration.framework */; };
 		86F71A77196086C0008EE3B7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F71A76196086C0008EE3B7 /* Parse.framework */; };
 		86F71A7D1960885E008EE3B7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */; };
+		A775050F1A5A24A100570BD6 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775050E1A5A24A100570BD6 /* TimelineTableViewController.swift */; };
+		A77505111A5A24DA00570BD6 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77505101A5A24DA00570BD6 /* ComposeViewController.swift */; };
+		A77505131A5A256C00570BD6 /* SweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77505121A5A256C00570BD6 /* SweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		86F71A74196086A3008EE3B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		86F71A76196086C0008EE3B7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A77505061A5A217C00570BD6 /* SwifferApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwifferApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A775050E1A5A24A100570BD6 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		A77505101A5A24DA00570BD6 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		A77505121A5A256C00570BD6 /* SweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +118,10 @@
 				86F71A7C1960885E008EE3B7 /* Storyboard.storyboard */,
 				86F71A4C19608640008EE3B7 /* Images.xcassets */,
 				86F71A4819608640008EE3B7 /* Supporting Files */,
+				A77505061A5A217C00570BD6 /* SwifferApp-Bridging-Header.h */,
+				A775050E1A5A24A100570BD6 /* TimelineTableViewController.swift */,
+				A77505101A5A24DA00570BD6 /* ComposeViewController.swift */,
+				A77505121A5A256C00570BD6 /* SweetTableViewCell.swift */,
 			);
 			path = SwifferApp;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 				TargetAttributes = {
 					86F71A4419608640008EE3B7 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 68QHXLG39B;
 					};
 					86F71A5119608640008EE3B7 = {
 						CreatedOnToolsVersion = 6.0;
@@ -256,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77505111A5A24DA00570BD6 /* ComposeViewController.swift in Sources */,
+				A775050F1A5A24A100570BD6 /* TimelineTableViewController.swift in Sources */,
+				A77505131A5A256C00570BD6 /* SweetTableViewCell.swift in Sources */,
 				86F71A4B19608640008EE3B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +311,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -338,7 +354,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -362,6 +379,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -369,6 +388,8 @@
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -379,6 +400,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Araki (WT7N7MFML9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -386,6 +409,8 @@
 				INFOPLIST_FILE = SwifferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwifferApp/SwifferApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
