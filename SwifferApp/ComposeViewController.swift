@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import SpriteKit
+import Social
 
 class ComposeViewController: UIViewController, UITextViewDelegate {
-
-
     
     @IBOutlet weak var sweetTextView: UITextView!
     @IBOutlet weak var charRemaining: UILabel!
+    
+    var myComposeView: SLComposeViewController!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -65,6 +67,14 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
             
             return (newLength > 140) ? false : true
     }
+    
+
+    @IBAction func onPostToTwitter(sender: AnyObject) {
+        myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        myComposeView.setInitialText("\(sweetTextView.text)#Parse")
+        self.presentViewController(myComposeView, animated: true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation

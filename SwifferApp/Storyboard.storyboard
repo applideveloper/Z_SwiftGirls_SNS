@@ -34,7 +34,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9o6-h5-XWV">
-                                            <rect key="frame" x="228" y="0.0" width="69" height="24"/>
+                                            <rect key="frame" x="173" y="0.0" width="124" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.865234375" green="0.865234375" blue="0.865234375" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,7 +56,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="gar-26-15X">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="K97-7F-iMv">
+                        <barButtonItem key="rightBarButtonItem" title="Sweet" id="K97-7F-iMv">
                             <connections>
                                 <segue destination="3zz-ND-S9n" kind="push" id="SIp-hy-bZ5"/>
                             </connections>
@@ -93,6 +93,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UJP-CQ-J0E">
+                        <barButtonItem key="leftBarButtonItem" title="Share" id="FqH-xU-IpA">
+                            <connections>
+                                <action selector="onPostToTwitter:" destination="3zz-ND-S9n" id="Yrc-3i-mfs"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="ljh-Zh-YVl">
                             <connections>
                                 <action selector="sendSweet:" destination="3zz-ND-S9n" id="acB-z0-MYp"/>
